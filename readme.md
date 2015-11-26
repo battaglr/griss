@@ -1,3 +1,3 @@
-# GRISS
+# Griss
 
 *WIP*
