@@ -1,0 +1,40 @@
+{
+  "name": "griss",
+  "version": "0.1.0",
+  "description": "Simple and modular grid system",
+  "author": "Luciano Battagliero",
+  "license": "MIT",
+  "homepage": "https://github.com/battaglr/griss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/battaglr/griss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/battaglr/griss/issues"
+  },
+  "main": "dist/griss.min.css",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+    "bannerize": "1.0.2",
+    "csso": "1.8.2",
+    "gzip-size-cli": "1.0.0",
+    "node-sass": "3.8.0"
+  },
+  "scripts": {
+    "build": "node-sass --output-style expanded src/griss.scss dist/griss.css",
+    "minify": "csso dist/griss.css dist/griss.min.css",
+    "license": "bannerize dist/griss.css --banner=etc/banner.ejs && bannerize dist/griss.min.css --banner=etc/banner.min.ejs",
+    "size": "gzip-size dist/griss.min.css",
+    "dist": "npm run build && npm run minify && npm run license && npm run size"
+  },
+  "keywords": [
+    "grid",
+    "layout",
+    "css",
+    "scss",
+    "sass"
+  ]
+}
