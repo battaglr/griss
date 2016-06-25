@@ -1,0 +1,37 @@
+////
+// Griss
+// v0.1.0 | MIT
+//
+
+////
+// 1. Visually remove gutter from first and last cell.
+// 2. Remove `ul` and `ol` default styles.
+// 3. Force all elements to behave as `block`.
+// 4. Clearfix.
+//
+
+.Grid {
+  margin: 0 -10px; // 1
+  padding: 0; // 2
+  list-style: none; // 2
+  display: block; // 3
+
+  &:after { // 4
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+////
+// 1. Take all available space.
+// 2. Gutter size.
+//
+
+.Grid-cell {
+  width: 100%; // 1
+  padding: 0 10px; // 2
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
