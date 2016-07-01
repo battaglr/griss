@@ -101,9 +101,9 @@ The following browsers are supported:
 ## Available modules
 
 - [Core](https://github.com/battaglr/griss) | 180 bytes
-- Cells (*WIP*)
 - Gutters (*WIP*)
-- *More…*
+- [Cells](https://github.com/battaglr/griss-cells) | 414 bytes
+- *More coming soon…*
 
 *Size values are based on the minified and gzipped version.*
 
