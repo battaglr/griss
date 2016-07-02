@@ -85,6 +85,11 @@ Some basic examples:
 For more examples, please check out the
 [test page](https://battaglr.github.io/griss/test/test.html).
 
+#### Available classes
+
+- `Grid`
+- `Grid-cell`
+
 ## Browser support
 
 The following browsers are supported:
