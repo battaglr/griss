@@ -121,9 +121,9 @@ The following browsers are supported:
 
 ## Available modules
 
-- Gutters (*WIP*)
 - [Core](https://github.com/battaglr/griss)
 - [Cells](https://github.com/battaglr/griss-cells)
+- [Gutters](https://github.com/battaglr/griss-gutters)
 - *More coming soon…*
 
 *Size values are based on the minified and gzipped version.*
