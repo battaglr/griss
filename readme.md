@@ -68,6 +68,22 @@ Some basic examples:
   </ul>
   ```
 
+  - A grid with two cells using `div` and a nested grid with two cells
+    using `span`:
+
+    ```html
+    <div class="Grid">
+      <div class="Grid-cell / Example-size(1/2)"> ... </div>
+      <div class="Grid-cell / Example-size(1/2)">
+        ...
+        <span class="Grid">
+          <span class="Grid-cell / Example-size(1/2)"> ... </span>
+          <span class="Grid-cell / Example-size(1/2)"> ... </span>
+        </span>
+      </div>
+    </div>
+    ```
+
 - Defining your own selectors:
 
   ```css
