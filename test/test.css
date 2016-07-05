@@ -21,17 +21,13 @@ h1 {
 }
 
 h2 {
-  margin: 30px 0 15px;
+  margin: 30px 0 10px;
 }
 
 small {
   margin: 30px 0 20px;
   display: block;
   font-size: inherit;
-}
-
-.Test {
-  background: #eee;
 }
 
 .Test-placeholder {
