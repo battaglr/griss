@@ -126,8 +126,6 @@ The following browsers are supported:
 - [Gutters](https://github.com/battaglr/griss-gutters)
 - *More coming soon…*
 
-*Size values are based on the minified and gzipped version.*
-
 ## Contributing
 
 Contributions are welcome! Please, read the
