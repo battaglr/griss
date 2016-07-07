@@ -4,8 +4,8 @@ Simple and modular grid system.
 
 ## Overview
 
-*Griss* is a simple grid system built with modularity in mind to help you
-develop with ease and avoid unnecessary bloat.
+*Griss* is a simple grid system built with modularity in mind to avoid
+unnecessary bloat and help you develop with ease.
 
 Key features:
 
@@ -33,17 +33,27 @@ your project:
 
 ## Usage
 
-Use whichever element you need: `div`, `span`, `ul`, `ol`, `li`, even `aside`,
-`article` or `main`. If the chosen element makes sense for your content it will
-—most certainly— work just fine.
+To create either a grid or a cell use whichever element makes sense for your
+content, it could be a `div`, `span`, `ul`, `ol`, `li`, even `aside`, `article`
+or `main`. If it makes sense, it will —*most certainly*— work just fine.
 
-By default cells are as wide as its container and have a gutter of `10px`.
-
-To define the size of each cell combine the base cell class —`Grid-cell`— with
-your own selector —i.e. `Example-size(1/2)`.
-
-*It’s very important to keep in mind that grids can only have cells as
+To define a grid use the base grid class —`Grid`— and as many cells as you
+need using the base cell class —`Grid-cell`. *Grids can only have cells as
 direct children.*
+
+Cells by default are as wide as the grid. To define a different size combine
+the base cell class with your own selector, or use the
+[cells module](https://github.com/battaglr/griss-cells).
+
+Gutters by default have a size of `10px` on each side of a cell, with the
+exception of the first and last one which are compensated automatically so each
+cell lines up with the content outside of the grid. To define a different size
+combine the base grid class with your own selector or use the
+[gutters module](https://github.com/battaglr/griss-gutters).
+
+*To avoid horizontal scrolling, always compensate the gutter size of the grid
+by applying `padding` to its parent element or by setting the `overflow` as
+`hidden`.*
 
 #### Examples
 
