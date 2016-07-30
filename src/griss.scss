@@ -10,7 +10,7 @@
 // 4. Clearfix.
 //
 
-.Grid {
+.gs-Grid {
   margin: 0 -10px; // 1
   padding: 0; // 2
   list-style: none; // 2
@@ -28,7 +28,7 @@
 // 2. Gutter size.
 //
 
-.Grid-cell {
+.gs-Grid-cell {
   width: 100%; // 1
   padding: 0 10px; // 2
   -webkit-box-sizing: border-box;
