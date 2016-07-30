@@ -12,7 +12,7 @@ Key features:
 - Fluid cells.
 - Fixed gutters.
 - Infinite nesting.
-- Lightweight (~180 bytes minified and gzipped).
+- Lightweight (~187 bytes minified and gzipped).
 - Extensible using the different [available modules](#available-modules) or
   your own code.
 
@@ -37,23 +37,17 @@ To create either a grid or a cell use whichever element makes sense for your
 content, it could be a `div`, `span`, `ul`, `ol`, `li`, even `aside`, `article`
 or `main`. If it makes sense, it will —*most certainly*— work just fine.
 
-To define a grid use the base grid class —`Grid`— and as many cells as you
-need using the base cell class —`Grid-cell`. *Grids can only have cells as
-direct children.*
+To define a grid use the base grid class —`gs-Grid`— and as many cells as you
+need using the base cell class —`gs-Grid-cell`. Keep in mind that Grids can
+only have cells as direct children.
 
 Cells by default are as wide as the grid. To define a different size combine
 the base cell class with your own selector, or use the
 [cells module](https://github.com/battaglr/griss-cells).
 
-Gutters by default have a size of `10px` on each side of a cell, with the
-exception of the first and last one which are compensated automatically so each
-cell lines up with the content outside of the grid. To define a different size
-combine the base grid class with your own selector or use the
+Gutters by default have a size of `20px`. To define a different size combine
+the base grid class with your own selector or use the
 [gutters module](https://github.com/battaglr/griss-gutters).
-
-*To avoid horizontal scrolling, always compensate the gutter size of the grid
-by applying `padding` to its parent element or by setting the `overflow` as
-`hidden`.*
 
 #### Examples
 
@@ -62,19 +56,19 @@ Some basic examples:
 - A grid with two cells using `div`:
 
   ```html
-  <div class="Grid">
-    <div class="Grid-cell / Example-size(1/2)"> ... </div>
-    <div class="Grid-cell / Example-size(1/2)"> ... </div>
+  <div class="gs-Grid">
+    <div class="gs-Grid-cell / Example-size(1/2)"> ... </div>
+    <div class="gs-Grid-cell / Example-size(1/2)"> ... </div>
   </div>
   ```
 
 - A grid with three cells using `ul` and `li`:
 
   ```html
-  <ul class="Grid">
-    <li class="Grid-cell / Example-size(1/3)"> ... </li>
-    <li class="Grid-cell / Example-size(1/3)"> ... </li>
-    <li class="Grid-cell / Example-size(1/3)"> ... </li>
+  <ul class="gs-Grid">
+    <li class="gs-Grid-cell / Example-size(1/3)"> ... </li>
+    <li class="gs-Grid-cell / Example-size(1/3)"> ... </li>
+    <li class="gs-Grid-cell / Example-size(1/3)"> ... </li>
   </ul>
   ```
 
@@ -82,13 +76,13 @@ Some basic examples:
   using `span`:
 
   ```html
-  <div class="Grid">
-    <div class="Grid-cell / Example-size(1/2)"> ... </div>
-    <div class="Grid-cell / Example-size(1/2)">
+  <div class="gs-Grid">
+    <div class="gs-Grid-cell / Example-size(1/2)"> ... </div>
+    <div class="gs-Grid-cell / Example-size(1/2)">
       ...
-      <span class="Grid">
-        <span class="Grid-cell / Example-size(1/2)"> ... </span>
-        <span class="Grid-cell / Example-size(1/2)"> ... </span>
+      <span class="gs-Grid">
+        <span class="gs-Grid-cell / Example-size(1/2)"> ... </span>
+        <span class="gs-Grid-cell / Example-size(1/2)"> ... </span>
       </span>
     </div>
   </div>
@@ -113,8 +107,8 @@ For more examples, please check out the
 
 #### Available classes
 
-- `Grid`
-- `Grid-cell`
+- `gs-Grid`
+- `gs-Grid-cell`
 
 ## Browser support
 
