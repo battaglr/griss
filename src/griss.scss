@@ -4,14 +4,14 @@
 //
 
 ////
-// 1. Visually remove gutter from first and last cell.
+// 1. Visually remove gutter from first cell.
 // 2. Remove `ul` and `ol` default styles.
 // 3. Force all elements to behave as `block`.
 // 4. Clearfix.
 //
 
 .gs-Grid {
-  margin: 0 -10px; // 1
+  margin: 0 0 0 -20px; // 1 & 2
   padding: 0; // 2
   list-style: none; // 2
   display: block; // 3
@@ -30,7 +30,7 @@
 
 .gs-Grid-cell {
   width: 100%; // 1
-  padding: 0 10px; // 2
+  padding: 0 0 0 20px; // 2
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
