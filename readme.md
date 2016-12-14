@@ -127,8 +127,8 @@ The following browsers are supported:
 
 - [Core](https://github.com/battaglr/griss)
 - [Cells](https://github.com/battaglr/griss-cells)
+- [Cells order](https://github.com/battaglr/griss-cells-order)
 - [Gutters](https://github.com/battaglr/griss-gutters)
-- *More coming soon…*
 
 ## Contributing
 
